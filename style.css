@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  font-family: 'Comic Sans MS', cursive;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  padding: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  animation: pop 2s infinite alternate;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.05); }
+}
+
+.msg {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #fff;
+}
+
+.countdown {
+  margin: 20px;
+  font-size: 1.3rem;
+}
+
+.surprise-btn, #giftBtn {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  margin: 20px auto;
+  background: #fff;
+  color: #ff4d88;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.surprise-btn:hover, #giftBtn:hover {
+  background: #ffe6f0;
+}
+
+.video-section, #giftMessage, #giftBtn {
+  display: none;
+  margin-top: 20px;
+}
+
+#giftMessage {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
